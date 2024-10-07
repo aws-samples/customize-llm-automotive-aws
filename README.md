@@ -16,8 +16,8 @@ The notebooks are currently using the latest [Hugging Face](https://github.com/a
 ## Notebooks
 
 1. [01_llama-3-8b-qlora-sft](./01_llama-3-8b-qlora-sft.ipynb): In this notebook, we are extracting a subset of the original dataset by using as distribution mechanism the TfidfVectorizer, by considering the importance of a word in a document (row), based on its frequency in the document and its rarity across the entire corpus of documents (rows)
-2. [02_llama-3-8b-deployment-sagemaker](./02_llama-3-8b-deployment-sagemaker.ipynb): In this notebook, we are going to deploy the fine-tuned model in Amazon SageMaker, and perform evaluation with vanilla LLMs in Amazon Bedrock
-3. [03_llama-3-8b-deployment-bedrock.ipynb](./03_llama-3-8b-deployment-bedrock.ipynb): In this notebook, we are going to deploy the fine-tuned model in Amazon Bedrock with Custom Import Models, and perform evaluation with vanilla LLMs in Amazon Bedrock
+2. [02_llama-3-8b-deployment-sagemaker](./02_llama-3-8b-deployment-sagemaker.ipynb): In this notebook, we are going to deploy the fine-tuned model in Amazon SageMaker, and perform evaluation with base LLMs in Amazon Bedrock
+3. [03_llama-3-8b-deployment-bedrock.ipynb](./03_llama-3-8b-deployment-bedrock.ipynb): In this notebook, we are going to deploy the fine-tuned model in Amazon Bedrock with Custom Import Models, and perform evaluation with base LLMs in Amazon Bedrock
 
 ## Step-by-step guidance
 
@@ -36,5 +36,5 @@ Deploy the fine-tuned Large Language Model on Amazon SageMaker or import the mod
 
 ### Model Evaluation
 
-The model evaluation is performed by deploying the fine-tuned model in Amazon SageMaker or Amazon Bedrock, and by using the vanilla model in Amazon Bedrock.
+The model evaluation is performed by deploying the fine-tuned model in Amazon SageMaker or Amazon Bedrock, and by using the base model in Amazon Bedrock.
 Evaluation metrics identified are BLEU Score (for text quality) and Normalized Levenshtein distance (for reponse accuracy)
