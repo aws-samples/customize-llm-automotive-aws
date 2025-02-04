@@ -7,7 +7,8 @@ You can run this repository from Amazon SageMaker Studio.
 
 ## Prerequistes
 
-The notebooks are currently using the latest [Hugging Face](https://github.com/aws/deep-learning-containers/blob/master/available_images.md) Training Container available for the region `us-east-1`. If you are running the notebooks in a different region, make sure to update the _ImageUri_ in the file [config.yaml](./config.yaml).
+- The notebooks are currently using the latest [Hugging Face](https://github.com/aws/deep-learning-containers/blob/master/available_images.md) Training Container available for the region `us-east-1`. If you are running the notebooks in a different region, make sure to update the _ImageUri_ in the file [config.yaml](./config.yaml).
+- During training and deployment via SageMaker, the code will be serialized. The code is developed with `python==3.11`. If you change to another python version, please make sure that the python version of the development environment matches the version of the container image. This can be done via adjusting the _ImageUri_ in the file [config.yaml](./config.yaml) or also directly in the notebook (see: [02_llama-3.1-8b-deployment-sagemaker.ipynb](./02_llama-3.1-8b-deployment-sagemaker.ipynb) )
 
 ## Dataset
 
