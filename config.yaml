@@ -17,6 +17,9 @@ SageMaker:
           - "*.csv"
           - "*.md"
           - "__pycache__"
+          - ".git*" #do not serialize anything git related
+          - ".github/" #do not serialize github folder
+          - ".venv" #do not serialize local virtual environment
         #RoleArn: RoleArn required if you are running the notebooks from a local IDE
   Model:
     EnableNetworkIsolation: false
