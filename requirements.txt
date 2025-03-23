@@ -6,7 +6,7 @@ datasets==2.20.0
 evaluate==0.4.1
 nltk==3.9.1
 safetensors>=0.4.3
-sagemaker==2.232.2
+sagemaker==2.237.3
 sentencepiece==0.2.0
 scikit-learn==1.5.1
 tokenizers>=0.19.1
